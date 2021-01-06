@@ -1,0 +1,990 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Russo One", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 0 40px;
+}
+
+nav.navbar {
+  background: transparent !important;
+}
+nav.navbar.fixed-top {
+  background-color: #ffffff !important;
+  box-shadow: 0px 4px 6px rgba(178, 57, 57, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+nav.navbar .navbar-toggler {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+nav.navbar.fixed-top .container .navbar-brand {
+  color: #b23939;
+}
+
+nav.navbar .container .navbar-brand {
+  font-size: 40px;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+nav.navbar.fixed-top .container .navbar-collapse ul li a.nav-link {
+  color: #b23939;
+}
+
+nav.navbar .container .navbar-collapse ul li a.nav-link {
+  font-size: 20px;
+  color: white;
+}
+
+nav.navbar .nav-item.active .nav-link {
+  color: #b23939 !important;
+}
+
+nav.navbar .nav-item:hover .nav-link {
+  color: #b23939 !important;
+}
+
+nav.navbar.fixed-top .nav-item.active .nav-link {
+  color: #8a0404 !important;
+}
+
+nav.navbar.fixed-top .nav-item:hover .nav-link {
+  color: #8a0404 !important;
+}
+
+nav.navbar.fixed-top .nav-item:hover .nav-link.btn-login {
+  color: #ffffff !important;
+  background: #8a0404;
+}
+
+.btn.btn-login {
+  padding: 5px 0px;
+  display: inline-block;
+  width: 100px;
+  border-radius: 30px;
+  color: #ffffff !important;
+  background: #b23939;
+  margin-top: 5px;
+}
+
+a.nav-link.btn.btn-login:hover {
+  color: #ffffff !important;
+  background: #8a0404;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section.highlight .jumbotron {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+  height: 670px;
+  margin-top: -100px;
+  border-radius: 0 0 300px 300px;
+}
+
+section.highlight .jumbotron .container .row.text {
+  text-align: center;
+  color: #ffffff;
+  height: 600px;
+  /* position: absolute;
+  top: 50%;
+  left: 22%; */
+}
+
+section.highlight .jumbotron .container .row.text .title {
+  font-size: 40px;
+  /* -webkit-animation: slideTextLeft 0.5s ease;
+  animation: slideTextLeft 0.5s ease; */
+}
+
+section.highlight .jumbotron .container .row.text h1 {
+  font-size: 46px;
+  /* -webkit-animation: slideTextRight 0.5s ease;
+  animation: slideTextRight 0.5s ease; */
+}
+
+@-webkit-keyframes slideTextRight {
+  0% {
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+@keyframes slideTextRight {
+  0% {
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slideTextLeft {
+  0% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+@keyframes slideTextLeft {
+  0% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+section.visi-misi {
+  margin-top: -100px;
+}
+
+section.visi-misi .container .title-visi {
+  background-color: #3962b2;
+  border-radius: 30px;
+}
+
+section.visi-misi .container .title-misi {
+  background-color: #b23939;
+  border-radius: 30px;
+}
+
+section.visi-misi .container .title-visi h1,
+section.visi-misi .container .title-misi h1 {
+  font-size: 36px;
+  color: #ffffff;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section.visi-misi .container .text-visi {
+  border: 6px solid #3962b2;
+}
+
+section.visi-misi .container .text-misi {
+  border: 6px solid #b23939;
+}
+section.visi-misi .container .text-misi,
+section.visi-misi .container .text-visi {
+  border-radius: 30px;
+  padding: 40px 50px;
+  text-align: center;
+  font-size: 20px;
+  color: #1c0f0f;
+}
+
+section.visi-misi .container .row .col-md-6 {
+  /* opacity: 0; */
+  transition: all 0.5s ease;
+}
+section.pembelajaran .container .heading {
+  margin-bottom: 50px;
+  opacity: 1;
+  animation: slideSection 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section.anggota .container .heading,
+section.divisi .container .heading {
+  margin-bottom: 50px;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+section.anggota .container .heading span,
+section.pembelajaran .container .heading span,
+section.divisi .container .heading span {
+  display: inline-block;
+  width: 120px;
+  height: 8px;
+  background-color: #b23939;
+  border-radius: 30px;
+  margin: 0 50px 5px 50px;
+}
+
+section.anggota .container .heading h1,
+section.pembelajaran .container .heading h1,
+section.divisi .container .heading h1 {
+  display: inline;
+  font-size: 36px;
+  color: #1c0f0f;
+}
+
+section.anggota .container .image {
+  margin-bottom: 15px;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+section.anggota .container .image img {
+  width: 100%;
+}
+
+section.anggota .container .image:hover {
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+section.anggota .container button.load-more {
+  width: 98%;
+  font-size: 30px;
+  color: #ffffff;
+  background-color: #b23939;
+  border: 0;
+  border-radius: 20px;
+  line-height: 2;
+  margin-top: 20px;
+  box-shadow: 2px 6px 10px rgba(178, 57, 57, 0.5);
+  transition: all ease 0.5s;
+}
+
+section.anggota .container button.load-more:hover {
+  background-color: #ffffff;
+  color: #b23939;
+}
+
+section.anggota .container .load {
+  display: none;
+}
+
+section.anggota .container .load.active {
+  padding: 0 15px;
+}
+
+section.anggota .container .load.active {
+  display: flex;
+  -webkit-animation: slideSection 0.5s ease;
+  animation: slideSection 0.5s ease;
+}
+
+@-webkit-keyframes slideSection {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+@keyframes slideSection {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+
+section.about {
+  padding: 50px 0;
+  background-color: #b23939;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+section.about .container .title {
+  font-size: 46px;
+  color: #ffffff;
+  margin: 0px 0 10px 0;
+}
+
+section.about .container .text {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+section.divisi {
+  margin-bottom: 80px;
+}
+
+section.divisi .container .card {
+  padding: 10px;
+  background: #ffffff;
+  box-shadow: 4px 4px 10px rgba(178, 57, 57, 0.5);
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+section.divisi .container .card .card-body {
+  text-align: center;
+}
+
+section.divisi .container .card .card-body .card-title {
+  font-size: 24px;
+  color: #1c0f0f;
+}
+
+section.divisi .container .card .card-body .card-text {
+  font-size: 20px;
+  color: #3e3e3e;
+}
+
+section.footer {
+  background: #0f101c;
+  height: auto;
+  margin-bottom: 0;
+  border-radius: 80px 80px 0px 0px;
+}
+
+section.footer .container {
+  padding-top: 8%;
+}
+
+/* section.footer .container .row {
+  margin-top: 20px !important;
+} */
+
+section.footer .container .title {
+  margin-bottom: 50px;
+}
+
+section.footer .container .title h1 {
+  font-size: 36px;
+  color: #e8e8e8;
+}
+
+section.footer .container .content iframe.address {
+  height: 127px;
+  border-radius: 20px;
+}
+
+section.footer .container .content {
+  color: #e8e8e8;
+  font-size: 20px;
+  line-height: 2;
+}
+
+section.footer .row .copyright {
+  font-size: 16px;
+  color: #e8e8e8;
+  text-align: center !important;
+  margin-top: 50px !important;
+  margin-bottom: 50px;
+}
+
+.image-show {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.image-show.active {
+  display: flex;
+  opacity: 1;
+}
+
+.image-show.active .image-show-content {
+  animation: lightboxImage 0.5s ease;
+}
+
+@-webkit-keyframes lightboxImage {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes lightboxImage {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.image-show .image-show-content {
+  position: relative;
+}
+
+.image-show .close-btn {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.image-show .close-btn:hover {
+  cursor: pointer;
+  font-size: 26px;
+}
+
+.image-show .btn {
+  width: 100%;
+  position: absolute;
+  cursor: zoom-out;
+}
+
+.image-show .btn .prev-btn,
+.image-show .btn .next-btn {
+  color: #b23939;
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.image-show .btn .prev-btn:hover,
+.image-show .btn .next-btn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.image-show .btn .prev-btn:active,
+.image-show .btn .next-btn:active {
+  transform: scale(0.9);
+}
+
+.image-show .btn .prev-btn {
+  float: left;
+}
+
+.image-show .btn .next-btn {
+  float: right;
+}
+
+.image-show .bg {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About Page */
+
+section.highlight.about-page .jumbotron {
+  height: 480px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/bg.jpg) no-repeat;
+  background-size: 106%;
+  background-position-y: -100px;
+}
+
+section.highlight.about-page .jumbotron .container .row.text h1 {
+  margin-top: -150px;
+}
+
+section.about-himakom .logo {
+  display: flex;
+  justify-content: center;
+  margin-top: -190px;
+}
+
+section.about-himakom .line span {
+  display: inline-block;
+  width: 165px;
+  height: 8px;
+  background-color: #b23939;
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+
+section.about-himakom .about-text {
+  width: 100%;
+  height: auto;
+  padding: 60px 90px;
+  background-color: #b23939;
+  color: #ffffff;
+  font-size: 28px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+section.about-himakom .about-text p {
+  margin: 0;
+}
+
+/* Galeri Page  */
+section.pembelajaran .big-img {
+  background-image: url(../images/galeri/pembelajaran2.jpg);
+  background-size: cover;
+  height: 465px;
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+}
+
+section.pembelajaran .big-img span {
+  background-color: #f43c3c;
+  color: #ffffff;
+  padding: 10px 20px !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0 20px 0 20px;
+  font-size: 18px;
+}
+
+section.pembelajaran .sm-img span {
+  background-color: #f43c3c;
+  color: #ffffff;
+  padding: 5px 10px !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0 10px 0 10px;
+  font-size: 16px;
+}
+
+section.pembelajaran .col-md-8 .col-md-6 {
+  padding: 5px;
+}
+
+section.pembelajaran .sm-img {
+  width: 99%;
+  height: 225px;
+  position: relative;
+  padding: 10px;
+}
+
+section.pembelajaran .col-md-6:first-child .sm-img {
+  background-image: url(../images/galeri/pembelajaran4.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+section.pembelajaran .col-md-6:nth-child(2) .sm-img {
+  background-image: url(../images/galeri/pembelajaran3.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+section.pembelajaran .col-md-6:nth-child(3) .sm-img {
+  background-image: url(../images/galeri/pembelajaran1.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+section.pembelajaran .col-md-6:last-child .sm-img {
+  background-image: url(../images/galeri/pembelajaran5.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.p15 {
+  padding: 0 15px 0 0 !important;
+}
+
+section.carousel .carousel-item {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section.carousel .carousel-item img {
+  border-radius: 20px;
+}
+
+section.koordinator .koordinator-heading,
+section.articles .articles-heading {
+  display: flex;
+  justify-content: center;
+}
+
+section.koordinator span,
+section.articles span {
+  display: inline-block;
+  width: 165px;
+  height: 8px;
+  background-color: #b23939;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+section.koordinator .koordinator-heading h1,
+section.articles .articles-heading h1 {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+section.koordinator .koordinator-heading div.heading,
+section.articles .articles-heading div.heading {
+  background-color: #b23939;
+  text-decoration: none;
+  padding: 5px 10px;
+  width: 300px;
+  border-radius: 30px;
+}
+
+section.koordinator .koordinator-content {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+section.koordinator .koordinator-content img {
+  width: 100% !important;
+}
+
+section.articles .card {
+  margin-top: 50px;
+  border-radius: 15px;
+}
+
+section.articles .card-img img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+section.articles .card-heading .card-title,
+section.articles .card-body {
+  padding: 15px;
+}
+
+section.articles .card-heading .card-title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+section.articles .card-heading .card-title h1 {
+  font-size: 35px;
+  color: #b23939;
+}
+
+section.articles .card-body {
+  line-height: 30px;
+  margin-top: 0px;
+  color: #5a4d4d;
+}
+
+/* Responsive */
+
+@media (max-width: 1199.98px) {
+  .container {
+    padding: 0;
+  }
+
+  section.highlight.about-page .jumbotron {
+    background-position-y: center;
+    background-size: cover;
+    background-position-x: center;
+  }
+
+  section.footer .container .content {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  nav.navbar.dark {
+    background: #ffffff !important;
+  }
+  section.highlight .jumbotron {
+    background-position: center;
+  }
+  nav.navbar.dark .container .navbar-brand,
+  nav.navbar.dark .container .navbar-collapse ul li a.nav-link {
+    color: #b23939;
+  }
+  section.anggota .container .heading span,
+  section.pembelajaran .container .heading span,
+  section.divisi .container .heading span {
+    width: 110px;
+  }
+
+  section.highlight .jumbotron .container .row.text span {
+    font-size: 28px;
+  }
+  h1 {
+    font-size: 30px !important;
+  }
+  section.about {
+    padding: 80px 0 !important;
+  }
+  section.about .container {
+    text-align: center;
+  }
+  section.about .container .title {
+    margin: 20px 0;
+    font-size: 30px;
+  }
+  section.about .container .text {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  section.footer .container .title {
+    margin: 30px 0 10px 0;
+  }
+  section.footer .container .content iframe {
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+  }
+
+  /* About Page  */
+  section.about-himakom .logo {
+    margin-top: -150px;
+  }
+  section.about-himakom .logo img {
+    width: 200px;
+  }
+
+  section.about-himakom .about-text {
+    font-size: 20px;
+    border-radius: 25px;
+  }
+
+  nav.navbar .btn.btn-login {
+    margin-left: 0 !important;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .p15 {
+    padding: 0;
+  }
+  nav.navbar .container .navbar-brand {
+    font-size: 36px;
+  }
+
+  /* nav.navbar .nav-item {
+    text-align: center;
+  } */
+
+  nav.navbar .btn.btn-login {
+    margin-left: 0 !important;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  section.highlight .jumbotron {
+    border-radius: 0 0 150px 150px;
+    height: 600px;
+  }
+  section.highlight h1 {
+    font-size: 30px !important;
+  }
+  section.visi-misi {
+    margin-top: -80px;
+  }
+  section.visi-misi .container .text-misi {
+    margin-bottom: 0;
+    padding: 20px 15px;
+  }
+  section.visi-misi .container .text-visi {
+    margin-bottom: 30px;
+    padding: 20px 15px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  section.anggota .container button.load-more {
+    font-size: 28px;
+  }
+  section.about img {
+    width: 150px;
+  }
+  section.anggota .container .heading span,
+  section.pembelajaran .container .heading span,
+  section.divisi .container .heading span {
+    margin: 0 10px 4px 10px;
+    width: 80px;
+  }
+  .image-show.active .image-show-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .image-show.active .image-show-content img {
+    width: 60%;
+    align-items: center;
+    margin-left: -20px;
+  }
+  .close-btn {
+    margin-top: -25px;
+  }
+
+  /* Galeri Page  */
+
+  section.pembelajaran .col-md-4 {
+    padding: 5px;
+  }
+
+  section.pembelajaran .big-img {
+    height: 300px;
+  }
+
+  section.pembelajaran .row.p15 {
+    padding: 0px !important;
+  }
+  section.pembelajaran .sm-img {
+    width: 100%;
+    height: 150px;
+  }
+
+  section.pembelajaran .heading {
+    margin-bottom: 30px !important;
+  }
+  section.about-himakom .about-text {
+    padding: 40px 50px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar {
+    padding: 0 50px;
+  }
+  .container {
+    padding: 0 50px;
+  }
+
+  section.pembelajaran {
+    margin-bottom: 30px !important;
+  }
+
+  section.pembelajaran .heading {
+    margin-bottom: 30px !important;
+  }
+
+  section.highlight .jumbotron {
+    border-radius: 0 0 100px 100px;
+    height: 600px;
+  }
+
+  h1 {
+    font-size: 20px !important;
+  }
+  section.visi-misi .container .text-misi,
+  section.visi-misi .container .text-visi,
+  section.about .container .text,
+  section.divisi .container .card .card-body .card-text {
+    font-size: 16px;
+  }
+  section.anggota .container .heading span,
+  section.pembelajaran .container .heading span,
+  section.divisi .container .heading span {
+    margin: 0 10px 4px 10px;
+    width: 60px;
+  }
+
+  section.anggota .container button.load-more,
+  section.divisi .container .card .card-body .card-title {
+    font-size: 20px;
+  }
+
+  section.divisi .container .card .card-body img {
+    vertical-align: middle;
+    border-style: none;
+    width: 100px;
+  }
+  section.footer .container .content {
+    font-size: 16px;
+  }
+  section.footer {
+    border-radius: 50px 50px 0 0;
+  }
+
+  /* about page  */
+
+  section.highlight.about-page .jumbotron .container .row.text h1 {
+    margin-top: -80px;
+  }
+
+  section.about-himakom .logo img {
+    width: 150px;
+    margin-bottom: 30px;
+  }
+
+  section.about-himakom .line span {
+    display: none;
+  }
+
+  section.about-himakom .about-text {
+    font-size: 16px;
+    padding: 30px 35px;
+    border-radius: 10px;
+  }
+  section.koordinator span,
+  section.articles span {
+    width: 50px;
+  }
+}
+
+@media (max-width: 426.98px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  nav.navbar .container .navbar-brand {
+    font-size: 24px;
+  }
+  nav.navbar .navbar-toggler {
+    width: 30px;
+    height: 30px;
+  }
+  .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+    margin: 0 0 0 -8px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  section.anggota .col-6 {
+    padding: 0 5px !important;
+  }
+  section.footer {
+    border-radius: 30px 30px 0 0;
+  }
+
+  section.koordinator span,
+  section.articles span {
+    display: none;
+  }
+  section.koordinator .koordinator-content img {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 395.98px) {
+  section.anggota .container .heading span,
+  section.pembelajaran .container .heading span,
+  section.divisi .container .heading span {
+    display: none;
+  }
+}
